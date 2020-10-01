@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <Label layoutX="171.0" layoutY="14.0" text="Les Formes &amp; Les vues">
+         <font>
+            <Font name="Agency FB" size="36.0" />
+         </font>
+      </Label>
+      <Line endX="419.0" endY="-7.62939453125E-6" fill="#392929" layoutX="140.0" layoutY="66.0" startX="-100.0" stroke="#dea7a7" />
+      <Label layoutX="39.0" layoutY="91.0" text="Nombre 1 :" textFill="#a70808">
+         <font>
+            <Font name="Agency FB" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="288.0" layoutY="91.0" text="Nombre 2 :" textFill="#a70808">
+         <font>
+            <Font name="Agency FB" size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="op1" layoutX="107.0" layoutY="90.0" prefHeight="25.0" prefWidth="101.0" />
+      <TextField fx:id="op2" layoutX="368.0" layoutY="90.0" prefHeight="25.0" prefWidth="101.0" />
+      <Button fx:id="som" layoutX="89.0" layoutY="146.0" mnemonicParsing="false" onAction="#sommeCLique" prefHeight="37.0" prefWidth="82.0" text="Somme">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="prod" layoutX="260.0" layoutY="146.0" mnemonicParsing="false" onAction="#produitCLique" prefHeight="38.0" prefWidth="82.0" text="Produit">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Button>
+      <Button fx:id="fac" layoutX="428.0" layoutY="146.0" mnemonicParsing="false" onAction="#factCLique" text="Factoriel">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <Line endX="419.0" endY="-7.62939453125E-6" fill="#392929" layoutX="141.0" layoutY="215.0" startX="-100.0" stroke="#dea7a7" />
+      <Button fx:id="quit" layoutX="180.0" layoutY="346.0" mnemonicParsing="false" onAction="#closeClique" prefHeight="37.0" prefWidth="101.0" text="Quitter">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="trace" layoutX="322.0" layoutY="346.0" mnemonicParsing="false" onAction="#traceClique" prefHeight="37.0" prefWidth="101.0" text="Trace">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <Label fx:id="res" layoutX="306.0" layoutY="250.0" prefHeight="45.0" prefWidth="101.0" text="...." textAlignment="CENTER" textFill="RED">
+         <font>
+            <Font name="Agency FB" size="38.0" />
+         </font>
+      </Label>
+      <Label fx:id="err" layoutX="40.0" layoutY="192.0" text="Erreur" textFill="RED" visible="false" />
+      <Label fx:id="res1" layoutX="137.0" layoutY="250.0" prefHeight="47.0" prefWidth="121.0" text="Resultat :" textAlignment="CENTER" textFill="#a70808">
+         <font>
+            <Font name="Agency FB" size="38.0" />
+         </font>
+      </Label>
+      <Line endX="419.0" endY="-7.62939453125E-6" fill="#392929" layoutX="140.0" layoutY="322.0" startX="-100.0" stroke="#dea7a7" />
+   </children>
+</AnchorPane>
